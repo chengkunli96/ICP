@@ -14,7 +14,7 @@ The main steps for ICP is as list:
 4. solve optimization function to get homograph transformation matrix.
 5. align src-pts to dst-pts, and then iterate.
 
-For the rejection part, I reject all of corresponding paires which the angle residual of their normal vector is more than 20°.
+For the rejection part, I reject all of bad corresponding paires which the angle residual of their normal vector is more than 20°.
 If you want to change this, please use `ctrl+f` in core code to find key-words `threshold` to change it.
 
 ## Requirements 
