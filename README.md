@@ -1,14 +1,20 @@
-# COMP119-Assignment1
+# ICP
 
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![GitHub stars](https://img.shields.io/github/stars/mremilien/ICP.svg?style=social)]
+[![GitHub stars](https://img.shields.io/github/stars/mremilien/ICP.svg?style=social)](https://github.com/mremilien/ICP/stargazers)
 
+Iterative closest point (ICP) is an algorithm employed to minimize the difference between two clouds of points. 
+This code is used to reconstrct 3d surfaces, and final result is shown by a trimesh-class-object.
 
-(https://github.com/mremilien/ICP/stargazers)
-
-This part is to introduce the file structure 
-and the instruction for running code.
+The main steps for ICP is as list:
+1. select a subject from source points (src-pts).
+2. match each src-pts to closest destination points (dst-pts) by knn.
+3. reject bad corresponding pairs.
+4. solve optimization function to get homograph transformation matrix.
+5. align src-pts to dst-pts, and then iterate.
+For the reject part, I reject all of corresponding paires which the angle residual of their normal vector is more than 20°.
+If you want to change this, please `ctrl+f` to find key-words `threshold` to change it.
 
 ## Requirements 
 The version of python is 3.6.12, and the libraries I used as following,
@@ -22,6 +28,7 @@ The version of python is 3.6.12, and the libraries I used as following,
 
 ## File structure
 * `data` this folder is used to place our resources files
+* `docs` the report of my experiment.
 * `src` includes all of the source code.
    * `part*.py` finishes different question.
    * `tools` floder is a package I build to implement core algorithm
@@ -63,3 +70,7 @@ For question 6, implement point to plane ICP.
 ```
 python part6.py
 ```
+
+## See a sample
+If you run the `part5` code, you will the result as following.
+![part5]()
