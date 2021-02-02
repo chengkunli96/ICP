@@ -73,5 +73,5 @@ python part6.py
 ```
 
 ## See a sample
-If you run the `part5` code, you will the result as following.
+If you run the `part5` code, you will get the result as following.
 ![part5](https://github.com/mremilien/ICP/blob/main/docs/recon.png)
