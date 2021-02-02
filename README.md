@@ -15,7 +15,7 @@ The main steps for ICP is as list:
 5. align src-pts to dst-pts, and then iterate.
 
 For the rejection part, I reject all of corresponding paires which the angle residual of their normal vector is more than 20°.
-If you want to change this, please `ctrl+f` to find key-words `threshold` to change it.
+If you want to change this, please use `ctrl+f` in core code to find key-words `threshold` to change it.
 
 ## Requirements 
 The version of python is 3.6.12, and the libraries I used as following,
@@ -42,7 +42,7 @@ The version of python is 3.6.12, and the libraries I used as following,
 ```
 cd src/
 ```
-For question 1, see the ICP's performance:
+For experiment 1, see the ICP's performance:
 ```
 # see the result by open3d
 # remember to press ‘q’ in keyboard to see the next plot
@@ -51,23 +51,23 @@ python part1.py
 # if you want to see the result by matplotlib
 python part1.py -plt
 ```
-For quetion 2, simulate the effect of increasing misalignment by adding a rotation.
+For experiment 2, simulate the effect of increasing misalignment by adding a rotation.
 ```
 python part2.py
 ```
-For question 3, Evaluate how well ICP performs as you continue to add more noise.
+For experiment 3, Evaluate how well ICP performs as you continue to add more noise.
 ```
 python part3.py
 ```
-For question 4, report accuracy with increasing subsampling rates.
+For experiment 4, report accuracy with increasing subsampling rates.
 ```
 python part4.py
 ```
-For question 5, reconstruction from all of scan models.
+For experiment 5, reconstruction from all of scan models.
 ```
 python part5.py
 ```
-For question 6, implement point to plane ICP.
+For experiment 6, implement point to plane ICP.
 ```
 python part6.py
 ```
