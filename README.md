@@ -1,4 +1,8 @@
 # COMP119-Assignment1
+
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![GitHub stars](https://img.shields.io/github/stars/mremilien/ICP.svg?style=social)](https://github.com/mremilien/ICP/stargazers)
 This part is to introduce the file structure 
 and the instruction for running code.
 
