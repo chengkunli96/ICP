@@ -31,13 +31,16 @@ The version of python is 3.6.12, and the libraries I used as following,
 * `data` this folder is used to place our resources files
 * `docs` the report of my experiment.
 * `src` includes all of the source code.
-   * `part*.py` finishes different question.
+   * `part*.py` in this files, I've done several experiment (check the report, you'll understand what I've done).
    * `tools` floder is a package I build to implement core algorithm
         * `baseICP.py` - point to point ICP
         * `normalICP.py` - point to plane ICP
         * `tools.py` - some tool function, like show mesh in open3d gui
  
  ## How to run
+ You can read the code of my experiments to find out the usage of ICP function. For doing this:
+ 
+ 
  You should make sure all of dependencies have been build. And next,
 ```
 cd src/
