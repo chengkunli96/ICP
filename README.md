@@ -36,17 +36,35 @@ The version of python is 3.6.12, and the libraries I used as following,
         * `baseICP.py` - point to point ICP
         * `normalICP.py` - point to plane ICP
         * `tools.py` - some tool function, like show mesh in open3d gui
+
+## Easy using
+Fistly, you should import the nessary module.
+``` python
+import trimesh
+import tools.baseICP  # our python package
+import tools.normalICP
+```
+And then load two meshes. Our aim is to trasform src_mesh to align with dst_mesh
+``` python
+dst_tm = trimesh.load(dst_mesh_fpth)
+src_tm = trimesh.load(src_mesh_fpth)
+```
+Use our ICP method to compute transfor matrix H (4*4).
+``` python
+# MeanErrors is a list which store the mean error of each iteration.
+# H, MeanErrors = tools.normalICP.icp(src_tm, dst_tm, max_iterations=30)
+H, MeanErrors = tools.baseICP.icp(src_tm, dst_tm, max_iterations=30)
+```
+
+## Experiments
+You can read the code of my experiments to find out the usage of ICP function. And more experiment details can be found in this [report](https://github.com/mremilien/ICP/blob/main/docs/report.pdf).For doing this:
  
- ## How to run
- You can read the code of my experiments to find out the usage of ICP function. For doing this:
- 
- 
- You should make sure all of dependencies have been build. And next,
+You should make sure all of dependencies have been build. And next,
 ```
 cd src/
 ```
 For experiment 1, see the ICP's performance:
-```
+```python
 # see the result by open3d
 # remember to press ‘q’ in keyboard to see the next plot
 python part1.py
@@ -55,7 +73,7 @@ python part1.py
 python part1.py -plt
 ```
 For experiment 2, simulate the effect of increasing misalignment by adding a rotation.
-```
+``` bash
 python part2.py
 ```
 For experiment 3, Evaluate how well ICP performs as you continue to add more noise.
