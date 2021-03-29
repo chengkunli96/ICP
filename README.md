@@ -49,7 +49,7 @@ And then load two meshes. Our aim is to trasform src_mesh to align with dst_mesh
 dst_tm = trimesh.load(dst_mesh_fpth)
 src_tm = trimesh.load(src_mesh_fpth)
 ```
-Use our ICP method to compute transfor matrix H (4*4).
+Use our ICP method to compute transformation matrix H (4*4).
 ``` python
 # MeanErrors is a list which store the mean error of each iteration.
 # H, MeanErrors = tools.normalICP.icp(src_tm, dst_tm, max_iterations=30)
