@@ -57,9 +57,9 @@ H, MeanErrors = tools.baseICP.icp(src_tm, dst_tm, max_iterations=30)
 ```
 
 ## Experiments
-You can read the code of my experiments to find out the usage of ICP function. And more experiment details can be found in this [report](https://github.com/mremilien/ICP/blob/main/docs/report.pdf).For doing this:
+You can read the code of my experiments to find out the usage of ICP function. And more experiment details can be found in this [report](https://github.com/mremilien/ICP/blob/main/docs/report.pdf).
  
-You should make sure all of dependencies have been build. And next,
+For run these experiment code, you should make sure all of dependencies have been build. And next,
 ```
 cd src/
 ```
