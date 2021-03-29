@@ -28,7 +28,7 @@ The version of python is 3.6.12, and the libraries I used as following,
 * argparse==1.4.0
 
 ## File structure
-* `data` this folder is used to place our resources files
+* `data` this folder is used to place our resources files for testing our algorithm.
 * `docs` the report of my experiment.
 * `src` includes all of the source code.
    * `part*.py` in this files, I've done several experiment (check the report, you'll understand what I've done).
