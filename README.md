@@ -2,7 +2,7 @@
 
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-[![GitHub stars](https://img.shields.io/github/stars/mremilien/ICP.svg?style=social)](https://github.com/mremilien/ICP/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/chengkunli96/ICP.svg?style=social)](https://github.com/chengkunli96/ICP/stargazers)
 
 Iterative closest point (ICP) is an algorithm employed to minimize the difference between two clouds of points. 
 This code is used to reconstrct 3d surfaces, and final result is shown by a trimesh-class-object.
